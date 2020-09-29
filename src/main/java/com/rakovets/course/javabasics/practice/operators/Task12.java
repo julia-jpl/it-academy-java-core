@@ -19,5 +19,12 @@ public class Task12 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int s = playingTimeInSeconds%60;
+        int min = playingTimeInSeconds/60;
+        int m = min%60;
+        int hours = min/60;
+        int h = hours%24;
+        int d = hours/24;
+        System.out.println(d+" "+h+":"+m+":"+s);
     }
 }
